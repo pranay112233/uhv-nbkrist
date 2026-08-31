@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Newsletter | UHV CELL NBKRIST</title>
+    <title>Contact | UHV CELL NBKRIST</title>
 
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+
         .page-header {
             padding: 100px 7%;
             text-align: center;
@@ -22,166 +23,184 @@
             font-size: clamp(42px, 6vw, 65px);
         }
 
-        .newsletter-page {
+        .contact-page {
             max-width: 1100px;
             margin: auto;
             padding: 80px 20px;
         }
 
-        .newsletter-intro {
-            max-width: 750px;
-            margin: 0 auto 55px;
-            text-align: center;
-        }
-
-        .newsletter-intro h2 {
-            font-family: Georgia, serif;
-            color: #102a36;
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
-
-        .newsletter-intro p {
-            color: #718189;
-        }
-
-        .newsletter-grid {
+        .contact-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 40px;
         }
 
-        .newsletter-card {
-            overflow: hidden;
-            border: 1px solid #e1eaed;
-            border-radius: 18px;
-            background: white;
-            transition: .3s;
-        }
-
-        .newsletter-card:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 18px 40px rgba(16,42,54,.10);
-        }
-
-        .newsletter-cover {
-            height: 170px;
-            display: grid;
-            place-items: center;
-            background: linear-gradient(135deg, #164e63, #286e80);
-            color: white;
-            font-size: 50px;
-        }
-
-        .newsletter-content {
-            padding: 25px;
-        }
-
-        .newsletter-date {
-            color: #d97706;
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
-
-        .newsletter-content h3 {
-            color: #102a36;
-            margin-bottom: 10px;
-        }
-
-        .newsletter-content p {
-            color: #718189;
-            font-size: 14px;
-            margin-bottom: 18px;
-        }
-
-        .newsletter-btn {
-            display: inline-block;
-            padding: 10px 17px;
-            border-radius: 8px;
-            background: #164e63;
-            color: white;
-            font-size: 13px;
-            font-weight: 700;
-        }
-
-        .subscribe-box {
-            margin-top: 60px;
-            padding: 50px 30px;
-            text-align: center;
-            border-radius: 22px;
+        .contact-info {
+            padding: 35px;
+            border-radius: 20px;
             background: #f7fafb;
         }
 
-        .subscribe-box h2 {
+        .contact-info h2,
+        .contact-form h2 {
             font-family: Georgia, serif;
             color: #102a36;
-            margin-bottom: 10px;
+            font-size: 34px;
+            margin-bottom: 15px;
         }
 
-        .subscribe-box p {
+        .contact-info > p {
             color: #718189;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
             margin-bottom: 25px;
         }
 
-        .subscribe-form {
-            max-width: 550px;
-            margin: auto;
-            display: flex;
-            gap: 10px;
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            flex-shrink: 0;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            background: #e8f4f7;
+            font-size: 20px;
         }
 
-        .subscribe-form input {
-            flex: 1;
-            padding: 14px 16px;
-            border: 1px solid #d9e3e7;
-            border-radius: 9px;
-            outline: none;
+        .contact-item h3 {
+            color: #102a36;
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+
+        .contact-item p {
+            color: #718189;
             font-size: 14px;
         }
 
-        .subscribe-form input:focus {
+        .contact-form {
+            padding: 35px;
+            border: 1px solid #e1eaed;
+            border-radius: 20px;
+            background: white;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #344b55;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #d8e3e7;
+            border-radius: 9px;
+            outline: none;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
             border-color: #164e63;
         }
 
-        .subscribe-form button {
-            border: 0;
-            cursor: pointer;
-            padding: 14px 20px;
+        .submit-btn {
+            width: 100%;
+            border: none;
+            padding: 14px;
             border-radius: 9px;
             background: #164e63;
             color: white;
+            font-size: 14px;
             font-weight: 700;
+            cursor: pointer;
+            transition: .3s;
         }
 
-        .subscribe-message {
-            margin-top: 15px;
-            font-size: 13px;
-            font-weight: 600;
-            color: #164e63;
+        .submit-btn:hover {
+            background: #0d3544;
+            transform: translateY(-2px);
+        }
+
+        .form-message {
             display: none;
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            background: #e8f4f7;
+            color: #164e63;
+            font-size: 13px;
+            text-align: center;
         }
 
-        @media(max-width:900px) {
-            .newsletter-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+        .map-box {
+            margin-top: 50px;
+            min-height: 250px;
+            border-radius: 20px;
+            background:
+                linear-gradient(
+                    rgba(22,78,99,.9),
+                    rgba(22,78,99,.9)
+                ),
+                repeating-linear-gradient(
+                    45deg,
+                    #286e80 0,
+                    #286e80 10px,
+                    #164e63 10px,
+                    #164e63 20px
+                );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
         }
 
-        @media(max-width:600px) {
-            .newsletter-grid {
+        .map-box h2 {
+            font-family: Georgia, serif;
+            margin-bottom: 8px;
+        }
+
+        .map-box p {
+            color: rgba(255,255,255,.75);
+        }
+
+        @media(max-width:800px) {
+
+            .contact-grid {
                 grid-template-columns: 1fr;
             }
 
-            .subscribe-form {
-                flex-direction: column;
-            }
         }
+
     </style>
+
 </head>
 
+
 <body>
+
 
 <header class="navbar">
 
@@ -190,270 +209,274 @@
         <span>NBKRIST</span>
     </div>
 
+
     <nav>
+
         <a href="index.html">Home</a>
+
         <a href="about.html">About Us</a>
+
         <a href="activities.html">Activities</a>
+
         <a href="resources.html">Resources</a>
+
         <a href="team.html">Our Team</a>
+
         <a href="newsletter.html">Newsletter</a>
+
         <a href="contact.html">Contact</a>
+
         <a href="app.html" class="download-btn">
             Download App
         </a>
+
     </nav>
 
 </header>
 
 
+
 <section class="page-header">
 
     <p class="small-title" style="color:#f7c66d;">
-        STAY UPDATED
+        GET IN TOUCH
     </p>
 
     <h1>
-        Newsletter
+        Contact Us
     </h1>
 
 </section>
 
 
-<section class="newsletter-page">
+
+<section class="contact-page">
 
 
-    <div class="newsletter-intro">
+    <div class="contact-grid">
 
-        <p class="small-title">
-            UHV CELL UPDATES
-        </p>
 
-        <h2>
-            News & Updates
-        </h2>
+        <div class="contact-info">
 
-        <p>
-            Stay informed about UHV activities, awareness
-            programs, workshops, events, and student initiatives.
-        </p>
+            <p class="small-title">
+                UHV CELL
+            </p>
+
+            <h2>
+                Let's Connect
+            </h2>
+
+            <p>
+                Have a question about UHV activities,
+                programs, resources, or volunteering?
+                Get in touch with us.
+            </p>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <div>
+
+                    <h3>
+                        Location
+                    </h3>
+
+                    <p>
+                        NBKR Institute of Science & Technology
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ✉️
+                </div>
+
+                <div>
+
+                    <h3>
+                        Email
+                    </h3>
+
+                    <p>
+                        UHV Cell, NBKRIST
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <div>
+
+                    <h3>
+                        Phone
+                    </h3>
+
+                    <p>
+                        Contact the UHV Cell
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="contact-form">
+
+            <p class="small-title">
+                SEND A MESSAGE
+            </p>
+
+            <h2>
+                Contact Form
+            </h2>
+
+
+            <form id="contactForm">
+
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <select id="subject" required>
+
+                        <option value="">
+                            Select a subject
+                        </option>
+
+                        <option value="uhv">
+                            UHV Program
+                        </option>
+
+                        <option value="activity">
+                            Activities
+                        </option>
+
+                        <option value="resources">
+                            Resources
+                        </option>
+
+                        <option value="volunteer">
+                            Volunteering
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    Send Message
+
+                </button>
+
+
+                <div
+                    class="form-message"
+                    id="formMessage">
+
+                    Thank you! Your message has been submitted.
+
+                </div>
+
+
+            </form>
+
+        </div>
+
 
     </div>
 
 
-    <div class="newsletter-grid">
 
+    <div class="map-box">
 
-        <article class="newsletter-card">
+        <div>
 
-            <div class="newsletter-cover">
-                📰
-            </div>
+            <h2>
+                UHV CELL — NBKRIST
+            </h2>
 
-            <div class="newsletter-content">
+            <p>
+                Universal Human Values • Harmony • Responsibility
+            </p>
 
-                <div class="newsletter-date">
-                    UHV UPDATE
-                </div>
-
-                <h3>
-                    Universal Human Values
-                </h3>
-
-                <p>
-                    Updates about UHV learning activities,
-                    sessions, and programs conducted on campus.
-                </p>
-
-                <a href="#" class="newsletter-btn">
-                    Read More
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="newsletter-card">
-
-            <div class="newsletter-cover">
-                🎓
-            </div>
-
-            <div class="newsletter-content">
-
-                <div class="newsletter-date">
-                    STUDENT ACTIVITIES
-                </div>
-
-                <h3>
-                    Student Participation
-                </h3>
-
-                <p>
-                    Highlights of student participation,
-                    volunteering, and value-based activities.
-                </p>
-
-                <a href="#" class="newsletter-btn">
-                    Read More
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="newsletter-card">
-
-            <div class="newsletter-cover">
-                🌱
-            </div>
-
-            <div class="newsletter-content">
-
-                <div class="newsletter-date">
-                    AWARENESS
-                </div>
-
-                <h3>
-                    Harmony With Nature
-                </h3>
-
-                <p>
-                    Information about environmental awareness
-                    and responsible living initiatives.
-                </p>
-
-                <a href="#" class="newsletter-btn">
-                    Read More
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="newsletter-card">
-
-            <div class="newsletter-cover">
-                🤝
-            </div>
-
-            <div class="newsletter-content">
-
-                <div class="newsletter-date">
-                    COMMUNITY
-                </div>
-
-                <h3>
-                    Social Responsibility
-                </h3>
-
-                <p>
-                    Activities that encourage responsible
-                    participation and contribution to society.
-                </p>
-
-                <a href="#" class="newsletter-btn">
-                    Read More
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="newsletter-card">
-
-            <div class="newsletter-cover">
-                📚
-            </div>
-
-            <div class="newsletter-content">
-
-                <div class="newsletter-date">
-                    LEARNING
-                </div>
-
-                <h3>
-                    Value Education
-                </h3>
-
-                <p>
-                    Useful information and learning resources
-                    related to Universal Human Values.
-                </p>
-
-                <a href="#" class="newsletter-btn">
-                    Read More
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="newsletter-card">
-
-            <div class="newsletter-cover">
-                💡
-            </div>
-
-            <div class="newsletter-content">
-
-                <div class="newsletter-date">
-                    UHV INSIGHTS
-                </div>
-
-                <h3>
-                    Learning & Reflection
-                </h3>
-
-                <p>
-                    Insights and reflections that help us
-                    understand harmony and meaningful living.
-                </p>
-
-                <a href="#" class="newsletter-btn">
-                    Read More
-                </a>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-
-    <div class="subscribe-box">
-
-        <h2>
-            Stay Connected
-        </h2>
-
-        <p>
-            Enter your email to stay updated with UHV Cell
-            activities and announcements.
-        </p>
-
-        <form class="subscribe-form" id="subscribeForm">
-
-            <input
-                type="email"
-                id="subscriberEmail"
-                placeholder="Enter your email address"
-                required
-            >
-
-            <button type="submit">
-                Subscribe
-            </button>
-
-        </form>
-
-        <div class="subscribe-message" id="subscribeMessage">
-            Thank you for subscribing!
         </div>
 
     </div>
@@ -462,9 +485,12 @@
 </section>
 
 
+
 <footer>
 
+
     <div class="footer-content">
+
 
         <div>
 
@@ -489,11 +515,25 @@
                 Quick Links
             </h4>
 
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="activities.html">Activities</a>
-            <a href="resources.html">Resources</a>
-            <a href="team.html">Our Team</a>
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="activities.html">
+                Activities
+            </a>
+
+            <a href="resources.html">
+                Resources
+            </a>
+
+            <a href="team.html">
+                Our Team
+            </a>
 
         </div>
 
@@ -514,7 +554,9 @@
 
         </div>
 
+
     </div>
+
 
 
     <div class="copyright">
@@ -525,34 +567,42 @@
 
     </div>
 
+
 </footer>
+
 
 
 <script src="js/script.js"></script>
 
+
 <script>
 
-    const subscribeForm =
-        document.getElementById("subscribeForm");
+    const contactForm =
+        document.getElementById("contactForm");
 
-    const subscribeMessage =
-        document.getElementById("subscribeMessage");
+    const formMessage =
+        document.getElementById("formMessage");
 
-    if (subscribeForm) {
 
-        subscribeForm.addEventListener("submit", function(event) {
+    if (contactForm) {
 
-            event.preventDefault();
+        contactForm.addEventListener(
+            "submit",
+            function(event) {
 
-            subscribeMessage.style.display = "block";
+                event.preventDefault();
 
-            subscribeForm.reset();
+                formMessage.style.display = "block";
 
-        });
+                contactForm.reset();
+
+            }
+        );
 
     }
 
 </script>
+
 
 </body>
 </html>
