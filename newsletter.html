@@ -1,0 +1,559 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Newsletter | UHV CELL NBKRIST</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .page-header {
+            padding: 100px 7%;
+            text-align: center;
+            color: white;
+            background: linear-gradient(120deg, #092e3d, #286e80);
+        }
+
+        .page-header h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(42px, 6vw, 65px);
+        }
+
+        .newsletter-page {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .newsletter-intro {
+            max-width: 750px;
+            margin: 0 auto 55px;
+            text-align: center;
+        }
+
+        .newsletter-intro h2 {
+            font-family: Georgia, serif;
+            color: #102a36;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-intro p {
+            color: #718189;
+        }
+
+        .newsletter-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .newsletter-card {
+            overflow: hidden;
+            border: 1px solid #e1eaed;
+            border-radius: 18px;
+            background: white;
+            transition: .3s;
+        }
+
+        .newsletter-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 40px rgba(16,42,54,.10);
+        }
+
+        .newsletter-cover {
+            height: 170px;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, #164e63, #286e80);
+            color: white;
+            font-size: 50px;
+        }
+
+        .newsletter-content {
+            padding: 25px;
+        }
+
+        .newsletter-date {
+            color: #d97706;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .newsletter-content h3 {
+            color: #102a36;
+            margin-bottom: 10px;
+        }
+
+        .newsletter-content p {
+            color: #718189;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .newsletter-btn {
+            display: inline-block;
+            padding: 10px 17px;
+            border-radius: 8px;
+            background: #164e63;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .subscribe-box {
+            margin-top: 60px;
+            padding: 50px 30px;
+            text-align: center;
+            border-radius: 22px;
+            background: #f7fafb;
+        }
+
+        .subscribe-box h2 {
+            font-family: Georgia, serif;
+            color: #102a36;
+            margin-bottom: 10px;
+        }
+
+        .subscribe-box p {
+            color: #718189;
+            margin-bottom: 25px;
+        }
+
+        .subscribe-form {
+            max-width: 550px;
+            margin: auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .subscribe-form input {
+            flex: 1;
+            padding: 14px 16px;
+            border: 1px solid #d9e3e7;
+            border-radius: 9px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .subscribe-form input:focus {
+            border-color: #164e63;
+        }
+
+        .subscribe-form button {
+            border: 0;
+            cursor: pointer;
+            padding: 14px 20px;
+            border-radius: 9px;
+            background: #164e63;
+            color: white;
+            font-weight: 700;
+        }
+
+        .subscribe-message {
+            margin-top: 15px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #164e63;
+            display: none;
+        }
+
+        @media(max-width:900px) {
+            .newsletter-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:600px) {
+            .newsletter-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .subscribe-form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        UHV CELL
+        <span>NBKRIST</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="activities.html">Activities</a>
+        <a href="resources.html">Resources</a>
+        <a href="team.html">Our Team</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="contact.html">Contact</a>
+        <a href="app.html" class="download-btn">
+            Download App
+        </a>
+    </nav>
+
+</header>
+
+
+<section class="page-header">
+
+    <p class="small-title" style="color:#f7c66d;">
+        STAY UPDATED
+    </p>
+
+    <h1>
+        Newsletter
+    </h1>
+
+</section>
+
+
+<section class="newsletter-page">
+
+
+    <div class="newsletter-intro">
+
+        <p class="small-title">
+            UHV CELL UPDATES
+        </p>
+
+        <h2>
+            News & Updates
+        </h2>
+
+        <p>
+            Stay informed about UHV activities, awareness
+            programs, workshops, events, and student initiatives.
+        </p>
+
+    </div>
+
+
+    <div class="newsletter-grid">
+
+
+        <article class="newsletter-card">
+
+            <div class="newsletter-cover">
+                📰
+            </div>
+
+            <div class="newsletter-content">
+
+                <div class="newsletter-date">
+                    UHV UPDATE
+                </div>
+
+                <h3>
+                    Universal Human Values
+                </h3>
+
+                <p>
+                    Updates about UHV learning activities,
+                    sessions, and programs conducted on campus.
+                </p>
+
+                <a href="#" class="newsletter-btn">
+                    Read More
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="newsletter-card">
+
+            <div class="newsletter-cover">
+                🎓
+            </div>
+
+            <div class="newsletter-content">
+
+                <div class="newsletter-date">
+                    STUDENT ACTIVITIES
+                </div>
+
+                <h3>
+                    Student Participation
+                </h3>
+
+                <p>
+                    Highlights of student participation,
+                    volunteering, and value-based activities.
+                </p>
+
+                <a href="#" class="newsletter-btn">
+                    Read More
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="newsletter-card">
+
+            <div class="newsletter-cover">
+                🌱
+            </div>
+
+            <div class="newsletter-content">
+
+                <div class="newsletter-date">
+                    AWARENESS
+                </div>
+
+                <h3>
+                    Harmony With Nature
+                </h3>
+
+                <p>
+                    Information about environmental awareness
+                    and responsible living initiatives.
+                </p>
+
+                <a href="#" class="newsletter-btn">
+                    Read More
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="newsletter-card">
+
+            <div class="newsletter-cover">
+                🤝
+            </div>
+
+            <div class="newsletter-content">
+
+                <div class="newsletter-date">
+                    COMMUNITY
+                </div>
+
+                <h3>
+                    Social Responsibility
+                </h3>
+
+                <p>
+                    Activities that encourage responsible
+                    participation and contribution to society.
+                </p>
+
+                <a href="#" class="newsletter-btn">
+                    Read More
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="newsletter-card">
+
+            <div class="newsletter-cover">
+                📚
+            </div>
+
+            <div class="newsletter-content">
+
+                <div class="newsletter-date">
+                    LEARNING
+                </div>
+
+                <h3>
+                    Value Education
+                </h3>
+
+                <p>
+                    Useful information and learning resources
+                    related to Universal Human Values.
+                </p>
+
+                <a href="#" class="newsletter-btn">
+                    Read More
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="newsletter-card">
+
+            <div class="newsletter-cover">
+                💡
+            </div>
+
+            <div class="newsletter-content">
+
+                <div class="newsletter-date">
+                    UHV INSIGHTS
+                </div>
+
+                <h3>
+                    Learning & Reflection
+                </h3>
+
+                <p>
+                    Insights and reflections that help us
+                    understand harmony and meaningful living.
+                </p>
+
+                <a href="#" class="newsletter-btn">
+                    Read More
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="subscribe-box">
+
+        <h2>
+            Stay Connected
+        </h2>
+
+        <p>
+            Enter your email to stay updated with UHV Cell
+            activities and announcements.
+        </p>
+
+        <form class="subscribe-form" id="subscribeForm">
+
+            <input
+                type="email"
+                id="subscriberEmail"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+        <div class="subscribe-message" id="subscribeMessage">
+            Thank you for subscribing!
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>
+                UHV CELL NBKRIST
+            </h3>
+
+            <p>
+                UNIVERSAL HUMAN VALUES
+            </p>
+
+            <p>
+                "Existence is Co-existence"
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="activities.html">Activities</a>
+            <a href="resources.html">Resources</a>
+            <a href="team.html">Our Team</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Contact Us
+            </h4>
+
+            <p>
+                UHV Cell
+            </p>
+
+            <p>
+                NBKRIST
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © <span id="year"></span>
+        UHV CELL NBKRIST.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+<script>
+
+    const subscribeForm =
+        document.getElementById("subscribeForm");
+
+    const subscribeMessage =
+        document.getElementById("subscribeMessage");
+
+    if (subscribeForm) {
+
+        subscribeForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            subscribeMessage.style.display = "block";
+
+            subscribeForm.reset();
+
+        });
+
+    }
+
+</script>
+
+</body>
+</html>
+```
