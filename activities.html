@@ -1,0 +1,292 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities | UHV CELL NBKRIST</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .page-header {
+            padding: 100px 7%;
+            text-align: center;
+            color: white;
+            background: linear-gradient(120deg, #092e3d, #286e80);
+        }
+
+        .page-header h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(42px, 6vw, 65px);
+        }
+
+        .activity-page {
+            max-width: 1180px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .activity-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .activity-item {
+            padding: 35px;
+            border: 1px solid #e1eaed;
+            border-radius: 18px;
+            background: white;
+            transition: .3s;
+        }
+
+        .activity-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(16,42,54,.10);
+        }
+
+        .activity-number {
+            font-size: 14px;
+            font-weight: 800;
+            color: #d97706;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .activity-item h2 {
+            font-family: Georgia, serif;
+            color: #102a36;
+            margin-bottom: 12px;
+        }
+
+        .activity-item p {
+            color: #718189;
+        }
+
+        @media(max-width:700px) {
+            .activity-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        UHV CELL
+        <span>NBKRIST</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="activities.html">Activities</a>
+        <a href="resources.html">Resources</a>
+        <a href="team.html">Our Team</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="contact.html">Contact</a>
+        <a href="app.html" class="download-btn">Download App</a>
+    </nav>
+
+</header>
+
+
+<section class="page-header">
+
+    <p class="small-title" style="color:#f7c66d;">
+        WHAT WE DO
+    </p>
+
+    <h1>Our Activities</h1>
+
+</section>
+
+
+<section class="activity-page">
+
+    <div class="activity-list">
+
+        <div class="activity-item">
+
+            <div class="activity-number">
+                01
+            </div>
+
+            <h2>
+                UHV Foundation Courses
+            </h2>
+
+            <p>
+                Interactive learning sessions that introduce
+                students to Universal Human Values, self-exploration,
+                relationships, and harmony in life.
+            </p>
+
+        </div>
+
+
+        <div class="activity-item">
+
+            <div class="activity-number">
+                02
+            </div>
+
+            <h2>
+                Awareness Programs
+            </h2>
+
+            <p>
+                Awareness programs and discussions are organized
+                to help students understand the importance of
+                values in personal and professional life.
+            </p>
+
+        </div>
+
+
+        <div class="activity-item">
+
+            <div class="activity-number">
+                03
+            </div>
+
+            <h2>
+                Value Education Sessions
+            </h2>
+
+            <p>
+                Sessions encourage students to reflect on
+                happiness, prosperity, relationships,
+                responsibility, and meaningful living.
+            </p>
+
+        </div>
+
+
+        <div class="activity-item">
+
+            <div class="activity-number">
+                04
+            </div>
+
+            <h2>
+                Student Interaction
+            </h2>
+
+            <p>
+                Interactive activities, group discussions,
+                presentations, and reflection exercises help
+                students explore human values practically.
+            </p>
+
+        </div>
+
+
+        <div class="activity-item">
+
+            <div class="activity-number">
+                05
+            </div>
+
+            <h2>
+                Social Responsibility
+            </h2>
+
+            <p>
+                Activities encourage students to contribute
+                positively to society and develop a sense of
+                responsibility towards others.
+            </p>
+
+        </div>
+
+
+        <div class="activity-item">
+
+            <div class="activity-number">
+                06
+            </div>
+
+            <h2>
+                Environmental Awareness
+            </h2>
+
+            <p>
+                Programs promote awareness about our relationship
+                with nature, resource conservation, and
+                responsible environmental practices.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <p class="small-title">
+        LEARN • REFLECT • PRACTICE
+    </p>
+
+    <h2>
+        Be Part of Our Activities
+    </h2>
+
+    <p>
+        Explore opportunities to participate in UHV
+        programs and initiatives.
+    </p>
+
+    <a href="contact.html" class="white-btn">
+        Contact UHV Cell
+    </a>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <h3>UHV CELL NBKRIST</h3>
+            <p>UNIVERSAL HUMAN VALUES</p>
+            <p>"Existence is Co-existence"</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="resources.html">Resources</a>
+            <a href="team.html">Our Team</a>
+        </div>
+
+        <div>
+            <h4>Contact Us</h4>
+            <p>UHV Cell</p>
+            <p>NBKRIST</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © <span id="year"></span>
+        UHV CELL NBKRIST.
+        All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+```
