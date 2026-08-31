@@ -1,0 +1,460 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Team | UHV CELL NBKRIST</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .page-header {
+            padding: 100px 7%;
+            text-align: center;
+            color: white;
+            background: linear-gradient(120deg, #092e3d, #286e80);
+        }
+
+        .page-header h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(42px, 6vw, 65px);
+        }
+
+        .team-page {
+            max-width: 1180px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .team-intro {
+            max-width: 750px;
+            margin: 0 auto 55px;
+            text-align: center;
+        }
+
+        .team-intro h2 {
+            font-family: Georgia, serif;
+            font-size: 40px;
+            color: #102a36;
+            margin-bottom: 15px;
+        }
+
+        .team-intro p {
+            color: #718189;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .team-card {
+            padding: 35px 25px;
+            text-align: center;
+            border: 1px solid #e1eaed;
+            border-radius: 20px;
+            background: white;
+            transition: .3s;
+        }
+
+        .team-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 40px rgba(16,42,54,.10);
+        }
+
+        .team-photo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: #e8f4f7;
+            font-size: 42px;
+        }
+
+        .team-card h3 {
+            color: #102a36;
+            margin-bottom: 5px;
+        }
+
+        .team-role {
+            color: #d97706;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .team-card p {
+            color: #718189;
+            font-size: 14px;
+        }
+
+        .team-note {
+            margin-top: 60px;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            background: #f7fafb;
+        }
+
+        .team-note h2 {
+            font-family: Georgia, serif;
+            color: #102a36;
+            margin-bottom: 10px;
+        }
+
+        .team-note p {
+            color: #718189;
+        }
+
+        @media(max-width:900px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:600px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .team-note {
+                padding: 30px 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        UHV CELL
+        <span>NBKRIST</span>
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="activities.html">Activities</a>
+
+        <a href="resources.html">Resources</a>
+
+        <a href="team.html">Our Team</a>
+
+        <a href="newsletter.html">Newsletter</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="app.html" class="download-btn">
+            Download App
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="page-header">
+
+    <p class="small-title" style="color:#f7c66d;">
+        OUR PEOPLE
+    </p>
+
+    <h1>
+        Our Team
+    </h1>
+
+</section>
+
+
+
+<section class="team-page">
+
+
+    <div class="team-intro">
+
+        <p class="small-title">
+            UHV CELL NBKRIST
+        </p>
+
+        <h2>
+            Meet Our Team
+        </h2>
+
+        <p>
+            The UHV Cell is supported by faculty members,
+            coordinators, and student volunteers working
+            together to promote Universal Human Values.
+        </p>
+
+    </div>
+
+
+
+    <div class="team-grid">
+
+
+        <div class="team-card">
+
+            <div class="team-photo">
+                👨‍🏫
+            </div>
+
+            <h3>
+                UHV Coordinator
+            </h3>
+
+            <div class="team-role">
+                FACULTY COORDINATOR
+            </div>
+
+            <p>
+                Responsible for coordinating UHV programs,
+                activities, and awareness initiatives.
+            </p>
+
+        </div>
+
+
+
+        <div class="team-card">
+
+            <div class="team-photo">
+                👩‍🏫
+            </div>
+
+            <h3>
+                Faculty Team
+            </h3>
+
+            <div class="team-role">
+                FACULTY MEMBERS
+            </div>
+
+            <p>
+                Supporting students through learning sessions,
+                workshops, and value education activities.
+            </p>
+
+        </div>
+
+
+
+        <div class="team-card">
+
+            <div class="team-photo">
+                🎓
+            </div>
+
+            <h3>
+                Student Coordinators
+            </h3>
+
+            <div class="team-role">
+                STUDENT TEAM
+            </div>
+
+            <p>
+                Helping organize programs and encouraging
+                student participation in UHV activities.
+            </p>
+
+        </div>
+
+
+
+        <div class="team-card">
+
+            <div class="team-photo">
+                🤝
+            </div>
+
+            <h3>
+                Student Volunteers
+            </h3>
+
+            <div class="team-role">
+                VOLUNTEER TEAM
+            </div>
+
+            <p>
+                Supporting events, awareness campaigns,
+                and community-oriented activities.
+            </p>
+
+        </div>
+
+
+
+        <div class="team-card">
+
+            <div class="team-photo">
+                💡
+            </div>
+
+            <h3>
+                Program Team
+            </h3>
+
+            <div class="team-role">
+                EVENT SUPPORT
+            </div>
+
+            <p>
+                Assisting with planning and execution of
+                UHV workshops, seminars, and events.
+            </p>
+
+        </div>
+
+
+
+        <div class="team-card">
+
+            <div class="team-photo">
+                🌱
+            </div>
+
+            <h3>
+                Outreach Team
+            </h3>
+
+            <div class="team-role">
+                AWARENESS & OUTREACH
+            </div>
+
+            <p>
+                Promoting awareness of human values and
+                responsible living across the campus.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="team-note">
+
+        <h2>
+            Want to Join Us?
+        </h2>
+
+        <p>
+            Students interested in volunteering or
+            participating in UHV activities can contact
+            the UHV Cell.
+        </p>
+
+        <a href="contact.html" class="main-btn">
+            Contact Us
+        </a>
+
+    </div>
+
+
+</section>
+
+
+
+<footer>
+
+
+    <div class="footer-content">
+
+
+        <div>
+
+            <h3>
+                UHV CELL NBKRIST
+            </h3>
+
+            <p>
+                UNIVERSAL HUMAN VALUES
+            </p>
+
+            <p>
+                "Existence is Co-existence"
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="activities.html">Activities</a>
+
+            <a href="resources.html">Resources</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+
+        <div>
+
+            <h4>
+                Contact Us
+            </h4>
+
+            <p>
+                UHV Cell
+            </p>
+
+            <p>
+                NBKRIST
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="copyright">
+
+        © <span id="year"></span>
+        UHV CELL NBKRIST.
+        All Rights Reserved.
+
+    </div>
+
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
+```
