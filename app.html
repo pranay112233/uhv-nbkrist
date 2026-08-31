@@ -1,0 +1,666 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Download App | UHV CELL NBKRIST</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .page-header {
+            padding: 100px 7%;
+            text-align: center;
+            color: white;
+            background: linear-gradient(120deg, #092e3d, #286e80);
+        }
+
+        .page-header h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(42px, 6vw, 65px);
+        }
+
+        .app-page {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .app-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .app-content h2 {
+            font-family: Georgia, serif;
+            color: #102a36;
+            font-size: 45px;
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+
+        .app-content h2 span {
+            color: #164e63;
+        }
+
+        .app-content > p {
+            color: #718189;
+            margin-bottom: 25px;
+        }
+
+        .app-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .app-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 20px;
+            border-radius: 10px;
+            background: #164e63;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            transition: .3s;
+        }
+
+        .app-button:hover {
+            background: #0d3544;
+            transform: translateY(-3px);
+        }
+
+        .app-button.secondary {
+            background: #d97706;
+        }
+
+        .app-button.secondary:hover {
+            background: #b85e03;
+        }
+
+        .phone {
+            max-width: 270px;
+            height: 500px;
+            margin: auto;
+            padding: 12px;
+            border-radius: 35px;
+            background: #102a36;
+            box-shadow: 0 25px 60px rgba(0,0,0,.18);
+        }
+
+        .phone-screen {
+            height: 100%;
+            overflow: hidden;
+            border-radius: 25px;
+            background: linear-gradient(160deg, #e8f4f7, white);
+        }
+
+        .phone-top {
+            padding: 25px 20px 15px;
+            background: #164e63;
+            color: white;
+        }
+
+        .phone-top small {
+            opacity: .7;
+        }
+
+        .phone-top h3 {
+            margin-top: 7px;
+        }
+
+        .phone-card {
+            margin: 15px;
+            padding: 17px;
+            border-radius: 14px;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,.06);
+        }
+
+        .phone-card strong {
+            display: block;
+            color: #102a36;
+            margin-bottom: 5px;
+        }
+
+        .phone-card span {
+            color: #718189;
+            font-size: 12px;
+        }
+
+        .features {
+            margin-top: 90px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-family: Georgia, serif;
+            color: #102a36;
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            border: 1px solid #e1eaed;
+            border-radius: 18px;
+            text-align: left;
+        }
+
+        .feature-icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            color: #102a36;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            color: #718189;
+            font-size: 14px;
+        }
+
+        .app-note {
+            margin-top: 55px;
+            padding: 30px;
+            border-radius: 18px;
+            background: #fff7e8;
+            text-align: center;
+        }
+
+        .app-note h3 {
+            color: #102a36;
+            margin-bottom: 8px;
+        }
+
+        .app-note p {
+            color: #718189;
+            font-size: 14px;
+        }
+
+        @media(max-width:800px) {
+
+            .app-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .app-content {
+                text-align: center;
+            }
+
+            .app-buttons {
+                justify-content: center;
+            }
+
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media(max-width:600px) {
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .app-content h2 {
+                font-size: 36px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        UHV CELL
+        <span>NBKRIST</span>
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="activities.html">Activities</a>
+
+        <a href="resources.html">Resources</a>
+
+        <a href="team.html">Our Team</a>
+
+        <a href="newsletter.html">Newsletter</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="app.html" class="download-btn">
+            Download App
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="page-header">
+
+    <p class="small-title" style="color:#f7c66d;">
+        UHV CELL
+    </p>
+
+    <h1>
+        Download App
+    </h1>
+
+</section>
+
+
+
+<section class="app-page">
+
+
+    <div class="app-hero">
+
+
+        <div class="app-content">
+
+            <p class="small-title">
+                UHV NBKRIST
+            </p>
+
+            <h2>
+                Universal Human
+                <span>Values</span>
+                in Your Pocket
+            </h2>
+
+            <p>
+                Access UHV learning resources, activities,
+                announcements, and useful information
+                conveniently from your mobile device.
+            </p>
+
+
+            <div class="app-buttons">
+
+                <a href="#" class="app-button">
+                    📱 Android App
+                </a>
+
+                <a href="#" class="app-button secondary">
+                    🌐 Web App
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="phone">
+
+            <div class="phone-screen">
+
+                <div class="phone-top">
+
+                    <small>
+                        UHV CELL
+                    </small>
+
+                    <h3>
+                        NBKRIST
+                    </h3>
+
+                </div>
+
+
+                <div class="phone-card">
+
+                    <strong>
+                        📚 Resources
+                    </strong>
+
+                    <span>
+                        Books & learning materials
+                    </span>
+
+                </div>
+
+
+                <div class="phone-card">
+
+                    <strong>
+                        🎓 Activities
+                    </strong>
+
+                    <span>
+                        Events & UHV programs
+                    </span>
+
+                </div>
+
+
+                <div class="phone-card">
+
+                    <strong>
+                        📰 Updates
+                    </strong>
+
+                    <span>
+                        Latest announcements
+                    </span>
+
+                </div>
+
+
+                <div class="phone-card">
+
+                    <strong>
+                        🤝 UHV Community
+                    </strong>
+
+                    <span>
+                        Learn • Reflect • Practice
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="features">
+
+        <p class="small-title">
+            APP FEATURES
+        </p>
+
+        <h2>
+            Everything You Need
+        </h2>
+
+
+        <div class="feature-grid">
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Learning Resources
+                </h3>
+
+                <p>
+                    Access UHV books, notes, presentations,
+                    articles, and other learning materials.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📅
+                </div>
+
+                <h3>
+                    Activities
+                </h3>
+
+                <p>
+                    Stay updated with UHV workshops,
+                    programs, seminars, and events.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🔔
+                </div>
+
+                <h3>
+                    Notifications
+                </h3>
+
+                <p>
+                    Get important information and
+                    announcements from the UHV Cell.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🎓
+                </div>
+
+                <h3>
+                    Student Support
+                </h3>
+
+                <p>
+                    Find useful information to support
+                    your UHV learning journey.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🌱
+                </div>
+
+                <h3>
+                    Harmony
+                </h3>
+
+                <p>
+                    Learn about harmony with yourself,
+                    society, and nature.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Community
+                </h3>
+
+                <p>
+                    Connect with UHV initiatives and
+                    participate in campus activities.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="app-note">
+
+        <h3>
+            App Download Link
+        </h3>
+
+        <p>
+            The Android application download link can be
+            added here once the official app APK or
+            Play Store link is available.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<section class="cta">
+
+    <p class="small-title">
+        LEARN • REFLECT • PRACTICE
+    </p>
+
+    <h2>
+        Begin Your Journey Towards Harmony
+    </h2>
+
+    <p>
+        Explore Universal Human Values with UHV Cell NBKRIST.
+    </p>
+
+    <a href="contact.html" class="white-btn">
+        Contact UHV Cell
+    </a>
+
+</section>
+
+
+
+<footer>
+
+
+    <div class="footer-content">
+
+
+        <div>
+
+            <h3>
+                UHV CELL NBKRIST
+            </h3>
+
+            <p>
+                UNIVERSAL HUMAN VALUES
+            </p>
+
+            <p>
+                "Existence is Co-existence"
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="activities.html">
+                Activities
+            </a>
+
+            <a href="resources.html">
+                Resources
+            </a>
+
+            <a href="team.html">
+                Our Team
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Contact Us
+            </h4>
+
+            <p>
+                UHV Cell
+            </p>
+
+            <p>
+                NBKRIST
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="copyright">
+
+        © <span id="year"></span>
+        UHV CELL NBKRIST.
+        All Rights Reserved.
+
+    </div>
+
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+```
